@@ -1,0 +1,4 @@
+cc -c -Wall myutil1.c myutil2.c
+
+
+ar -cvq libmyutil.a myutil1.o myutil2.o

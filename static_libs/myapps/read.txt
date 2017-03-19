@@ -1,0 +1,11 @@
+cc -c -Wall myApp.c
+
+cc -c -Wall -I /home/himanshu/library_demo/static_libs/myheaders myApp.c
+
+cc -o myApp myApp.o
+
+cc -o myApp myApp.o -L/home/himanshu/library_demo/static_libs/mylibs -lmyutil
+
+
+#remove the library once myApp is built
+
