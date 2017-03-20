@@ -1,0 +1,12 @@
+cc -c -Wall myApp.c
+
+cc -c -Wall -I cc -c -Wall -I ../myheaders myApp.c  myApp.c
+
+cc -o myApp myApp.o
+
+cc -o myApp myApp.o -L../mylibs -lmyutil
+
+export LD_LIBRARY_PATH=../mylibs
+
+#remove the library once myApp is built; myApp cannot be executed since tjis requires shared library at run time
+

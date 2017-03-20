@@ -1,0 +1,3 @@
+cc -c -Wall -fPIC myutil1.c myutil2.c
+
+cc -shared -o libmyutil.so   *.o
