@@ -1,2 +1,2 @@
 # libraryCreation
-library creation in C
+library creation in C.
